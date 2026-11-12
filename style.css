@@ -1,4 +1,4 @@
-/* Colours and spacing scale: neutrals plus one accent */
+
 :root {
   --bg: #F6F3EE;
   --sheet: #FFFFFF;
@@ -12,7 +12,7 @@
   --edge: 24px;
 }
 
-/* Page base: body text, links, paragraphs */
+
 * {
   box-sizing: border-box;
 }
@@ -45,7 +45,7 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* Headings: more space above than below */
+
 h1, h2, h3, h4 {
   font-family: 'Fraunces', Georgia, serif;
   line-height: 1.25;
@@ -67,14 +67,14 @@ h3 {
   margin-bottom: var(--s1);
 }
 
-/* Shared centred column */
+
 .wrap {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 var(--edge);
 }
 
-/* Navigation bar (flexbox) */
+
 .nav {
   position: sticky;
   top: 0;
@@ -125,7 +125,7 @@ h3 {
   color: var(--sheet);
 }
 
-/* Hero: photo, name, one-line description, buttons */
+
 #hero {
   padding: var(--s3) 0;
 }
@@ -155,7 +155,7 @@ h3 {
   font-size: 1.15rem;
 }
 
-/* Buttons: accent is used only here and on links */
+
 .btn-row {
   display: flex;
   flex-wrap: wrap;
@@ -188,13 +188,13 @@ h3 {
   color: var(--accent);
 }
 
-/* Sections: 40px above each heading */
+
 .site-section {
   padding-top: var(--s3);
   scroll-margin-top: 56px;
 }
 
-/* Cards: flat, thin outline, no shadow */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -224,7 +224,7 @@ h3 {
   gap: var(--s2);
 }
 
-/* Education table */
+
 .table-wrap {
   overflow-x: auto;
   background: var(--sheet);
@@ -253,7 +253,7 @@ tr:last-child td {
   border-bottom: 0;
 }
 
-/* Skills list: sentences with proof */
+
 .plain-list {
   margin: 0;
   padding: 0;
@@ -265,7 +265,7 @@ tr:last-child td {
   margin-bottom: var(--s1);
 }
 
-/* Paper resume: white sheet like an A4 page */
+
 .resume-wrap {
   padding-bottom: var(--s3);
 }
@@ -306,7 +306,7 @@ tr:last-child td {
   margin-bottom: 4px;
 }
 
-/* Screens narrower than 700px */
+
 @media (max-width: 699px) {
   h1 {
     font-size: 1.85rem;
@@ -331,7 +331,7 @@ tr:last-child td {
   }
 }
 
-/* Print: only the resume, one A4 page, black on white */
+
 @media print {
   @page {
     size: A4;
@@ -378,7 +378,7 @@ tr:last-child td {
   }
 }
 
-/* Reduced motion: turn off colour transitions */
+
 @media (prefers-reduced-motion: reduce) {
   a, .btn, .nav-email {
     transition: none;
